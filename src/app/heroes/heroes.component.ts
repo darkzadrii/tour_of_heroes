@@ -12,9 +12,9 @@ import { MessageService } from '../message.service';
 export class HeroesComponent implements OnInit {
 
   selectedHero: Hero;
-
   heroes: Hero[];
 
+  /**Aggiunta di un private */
   constructor(private heroService: HeroService, private messageService: MessageService) { }
 
   ngOnInit() {
